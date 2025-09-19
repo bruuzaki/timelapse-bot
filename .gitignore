@@ -1,0 +1,10 @@
+# .gitignore
+.env
+*.db
+__pycache__/
+*.pyc
+/data/
+.DS_Store
+.vscode/
+*.mp4
+*.jpg

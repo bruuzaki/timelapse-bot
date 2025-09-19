@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  timelapse-bot:
+    build: .
+    container_name: timelapse-bot
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+    devices:
+      - "/dev/video0:/dev/video0"   # acceso a la webcam
+    restart: unless-stopped
