@@ -211,7 +211,7 @@ if __name__ == "__main__":
 
         if DEFAULTS["TELEGRAM_BOT_TOKEN"]:
             app = Application.builder().token(DEFAULTS["TELEGRAM_BOT_TOKEN"]).build()
-            app.add_handler(CommandHandler("status", status))
+            app.add_handler(CommandHandler("tlstatus", status))
             app.run_polling()
         else:
             t.join()
